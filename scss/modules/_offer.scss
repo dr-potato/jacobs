@@ -1,0 +1,67 @@
+// *************************************
+//
+// Offer
+// -> Special offers
+//
+// *************************************
+
+.Offer {
+  @extend .u-gridContainer;
+  text-transform: uppercase;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// Module-variableName
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+// ----- Image ----- //
+
+.Offer-image {
+  @extend .u-gridCol6;
+}
+
+// ----- Text ----- //
+
+.Offer-text {
+  @extend .u-gridCol6;
+  background: $c-blue;
+}
+
+// ----- Title ----- //
+
+.Offer-title {
+  margin: 0;
+  color: $c-white;
+}
+
+// ----- Subtitle ----- //
+
+.Offer-subtitle {
+  margin: 0;
+  color: $c-white;
+  font-weight: bold;
+}

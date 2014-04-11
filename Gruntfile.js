@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
       // Production
       prod_theme_root:    '/wp-content/themes',
-      prod_theme_current: '<%= dirs.prod_theme_root %>/slate',
+      prod_theme_current: '<%= dirs.prod_theme_root %>/slate_jacobs',
       prod_css:           '<%= dirs.prod_theme_current %>/css',
       prod_js:            '<%= dirs.prod_theme_current %>/js',
       prod_js_standalone: '<%= dirs.prod_js %>/standalone',
@@ -144,7 +144,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= dirs.dev_img_src %>/',
-          src: ['**/*.{png,jpg,jpeg,gif,PNG,JPG,JPEG,GIF}'],
+          src: ['**/*.{png,jpg,jpeg,gif}'],
           dest: '<%= dirs.dev_img_build %>/'
         }]
       }
@@ -162,9 +162,6 @@ module.exports = function(grunt) {
     // FTP
     // note: exclusions are relative to the src folder
     ftpush: {
-      options: {
-        exclusions: ['/**/.gitkeep', '/**/.gitignore']
-      },
       css_prod: {
         auth: {
           host: '178.18.94.73',
@@ -182,8 +179,9 @@ module.exports = function(grunt) {
           port: 21,
           authKey: 'lokaalgevonden'
         },
-        src: '<%= dirs.dev_css %>/style.css',
+        src: '<%= dirs.dev_css %>',
         dest: '<%= dirs.prod_theme_current %>',
+        exclusions: ['/build'],
         simple: true,
         useList: false
       },
@@ -195,7 +193,7 @@ module.exports = function(grunt) {
         },
         src: '<%= dirs.dev_js_standalone %>',
         dest: '<%= dirs.prod_js_standalone %>',
-        simple: false,
+        simple: true,
         useList: false
       },
       js_prod: {
@@ -218,7 +216,7 @@ module.exports = function(grunt) {
         },
         src: '<%= dirs.dev_img_build %>',
         dest: '<%= dirs.prod_img %>',
-        simple: false,
+        simple: true,
         useList: false
       },
       ico_prod: {
@@ -229,7 +227,7 @@ module.exports = function(grunt) {
         },
         src: '<%= dirs.dev_ico_build %>',
         dest: '<%= dirs.prod_theme_current %>',
-        simple: false,
+        simple: true,
         useList: false
       },
       php_prod: {
@@ -240,7 +238,8 @@ module.exports = function(grunt) {
         },
         src: '<%= dirs.dev_php %>',
         dest: '<%= dirs.prod_theme_current %>',
-        simple: false,
+        keep: ['!*.php'],
+        simple: true,
         useList: false
       }
     },

@@ -1,9 +1,12 @@
 /*
 Theme Name: Slate
-Theme URI: 
-Description: A Clean Slate
+Theme URI: http://lokaalgevonden.nl
+Description: A Clean Slate - Jacobs Child Theme
 Version: 1.0
 Author: Ismay Wolff
 Author URI: http://www.ismaywolff.nl
 Tags: Slate
+Template: slate
 */
+
+@import url('../slate/style.css');

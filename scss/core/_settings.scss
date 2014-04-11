@@ -1,0 +1,74 @@
+// *************************************
+//
+// Settings
+// -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+// Libs
+// -------------------------------------
+
+// ----- Bourbon ----- //
+
+$prefix-for-microsoft : false;
+$prefix-for-mozilla   : false;
+$prefix-for-opera     : false;
+$prefix-for-spec      : false;
+$prefix-for-webkit    : false;
+
+// -------------------------------------
+// @font-face
+// -------------------------------------
+
+// Open Sans Light
+@include font-face(Open Sans Light, '../fonts/opensans/opensans-light-webfont', normal, normal);
+@include font-face(Open Sans Light, '../fonts/opensans/opensans-lightitalic-webfont', normal, italic);
+
+// Open Sans Regular
+@include font-face(Open Sans, '../fonts/opensans/opensans-regular-webfont', normal, normal);
+@include font-face(Open Sans, '../fonts/opensans/opensans-bold-webfont', bold, normal);
+@include font-face(Open Sans, '../fonts/opensans/opensans-italic-webfont', normal, italic);
+
+// Open Sans Semi Bold
+@include font-face(Open Sans Semi Bold, '../fonts/opensans/opensans-semibold-webfont', bold, normal);
+@include font-face(Open Sans Semi Bold, '../fonts/opensans/opensans-semibolditalic-webfont', bold, italic);
+
+// Open Sans Bold
+@include font-face(Open Sans Bold, '../fonts/opensans/opensans-bold-webfont', bold, normal);
+@include font-face(Open Sans Bold, '../fonts/opensans/opensans-bolditalic-webfont', bold, italic);
+
+// Open Sans Extra Bold
+@include font-face(Open Sans Extra Bold, '../fonts/opensans/opensans-extrabold-webfont', bold, normal);
+@include font-face(Open Sans Extra Bold, '../fonts/opensans/opensans-extrabolditalic-webfont', bold, italic);
+
+// Hobo
+@include font-face(Hobo, '../fonts/hobo/hobo-webfont', normal, normal);
+
+// -------------------------------------
+// Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$c-black : #1B1C17;
+$c-blue  : #0070AF;
+$c-white : #EFEFEF;
+
+// ----- Layout ----- //
+
+$l-whitespace: 20px;
+$l-gutter: 60px;
+$l-maxWidth: 980px;
+
+// Borders & Box-shadows
+$l-border         : 1px solid $c-black;
+$l-borderRadius   : 3px;
+$l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
+
+// ----- Text ----- //
+
+$t-fontFamily : 'Open Sans', sans-serif;
+$t-headerFontFamily: 'Open Sans', sans-serif;
+$t-fontSize   : 16px;
+$t-lineHeight : 1.5;
