@@ -35,8 +35,8 @@
 
 .u-gridRow {
   @include row();
-  padding-top    : rem($l-whiteSpace);
-  padding-bottom : rem($l-whiteSpace);
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
 }
 
 // -------------------------------------
