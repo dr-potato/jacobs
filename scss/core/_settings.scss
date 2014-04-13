@@ -6,18 +6,6 @@
 // *************************************
 
 // -------------------------------------
-// Libs
-// -------------------------------------
-
-// ----- Bourbon ----- //
-
-$prefix-for-microsoft : false;
-$prefix-for-mozilla   : false;
-$prefix-for-opera     : false;
-$prefix-for-spec      : false;
-$prefix-for-webkit    : false;
-
-// -------------------------------------
 // @font-face
 // -------------------------------------
 
@@ -56,10 +44,7 @@ $c-blue  : #0070AF;
 $c-white : #EFEFEF;
 
 // ----- Layout ----- //
-
-$l-whitespace: 20px;
-$l-gutter: 60px;
-$l-maxWidth: 980px;
+$l-whiteSpace: rem(10px);
 
 // Borders & Box-shadows
 $l-border         : 1px solid $c-black;
@@ -68,7 +53,7 @@ $l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
 
 // ----- Text ----- //
 
-$t-fontFamily : 'Open Sans', sans-serif;
-$t-headerFontFamily: 'Open Sans', sans-serif;
-$t-fontSize   : 16px;
-$t-lineHeight : 1.5;
+$t-fontFamily       : 'Open Sans', $helvetica;
+$t-headerFontFamily : 'Open Sans', $helvetica;
+$t-fontSize         : 16px;
+$t-lineHeight       : 1.5;

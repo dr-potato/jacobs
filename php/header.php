@@ -41,7 +41,7 @@
 
   <header class="Header">
     <div class="Header-contact">
-      <div class="u-layoutCell u-cf">
+      <div class="u-gridContainer">
         <a href="#" class="Button Button--default">
           <svg class="Icon" viewBox="0 0 128 128"><use xlink:href="#icon-phone"></use></svg>
           <span>076 - 5962069</span>
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="Header-logo">
-        <div class="u-layoutCell u-cf">
+        <div class="u-gridContainer">
           <div class="Logo">
               <a href="/" class="Logo-imageLink"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-jacobs.svg" alt="Jacobs Sierbestrating Logo"></a>
               <a href="/" class="Logo-textLink"><h1 class="Logo-heading"><span class="Logo-headingTop">Jacobs</span><span class="Logo-headingBottom">Sierbestrating</span></h1></a>
@@ -90,18 +90,16 @@
         </div>
     </div>
     <div class="Header-nav">
-        <div class="u-layoutCell">
+        <div class="u-gridContainer">
             <!-- Main navigation -->
             <?php include 'includes/navigation.php'; ?>
         </div>
     </div>
     <?php if(is_front_page()) {?><!-- Display banner only on the frontpage -->
     <div class="Header-carousel">
-        <div class="u-layoutCell">
+        <div class="u-gridContainer">
             <div class="Offer">
-                <div class="Offer-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-aanbieding.jpg" alt="Aanbieding">
-                </div>
+                <div class="Offer-image"></div>
                 <div class="Offer-text">
                     <h2 class="Offer-title">Garden Concept Line</h2>
                     <p class="Offer-subtitle">20x30cm</p>

@@ -15,28 +15,9 @@
   background-color: red !important;
 }
 
-// ----- Ellipsis ----- //
-
-%ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 // -------------------------------------
 // Functions
 // -------------------------------------
-
-// ----- em ----- //
-
-@function em($target, $context: $t-fontSize) {
-  @if ($target == 0) {
-    @return 0;
-  }
-  @else {
-    @return #{$target / $context}em;
-  }
-}
 
 // ----- rem ----- //
 
@@ -47,9 +28,3 @@
 // -------------------------------------
 // Mixins
 // -------------------------------------
-
-@mixin respond-to($val, $query: min-width, $media: screen) {
-  @media #{$media} and ($query: $val) {
-    @content;
-  }
-}
