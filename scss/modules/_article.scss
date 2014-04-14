@@ -1,28 +1,23 @@
 // *************************************
 //
-// Table
-// -> A module for beating tables into
-//    submission
+// Module
+// -> This is an example module
+//
 // *************************************
 
-.Table {
-  text-transform: uppercase;
-}
+.Article {}
 
 // -------------------------------------
 // Module specific variables
 // -------------------------------------
 
-// -variable
+// Module-variableName
 
 // -------------------------------------
 // Modifiers
 // -------------------------------------
 
-.Table--invertedBold {
-  color: $c-white;
-  font-weight: bold;
-}
+// .Module--modifierName
 
 // -------------------------------------
 // States
@@ -40,6 +35,11 @@
 // Submodules
 // -------------------------------------
 
-.Table-title {
-  padding-bottom: $l-whiteSpace;
+.Article-title {
+  @extend %u-textH3;
+  text-transform: uppercase;
+}
+
+.Article-content {
+
 }

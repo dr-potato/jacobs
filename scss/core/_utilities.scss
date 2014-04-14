@@ -35,8 +35,6 @@
 
 .u-gridRow {
   @include row();
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
 }
 
 // -------------------------------------
@@ -49,6 +47,10 @@
 
 .u-textShout {
   text-transform: uppercase;
+}
+
+.u-textFat {
+  font-weight: bold;
 }
 
 .u-textLead {

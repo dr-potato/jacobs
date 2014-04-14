@@ -64,7 +64,7 @@
               <a href="/" class="Logo-imageLink"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-jacobs.svg" alt="Jacobs Sierbestrating Logo"></a>
               <a href="/" class="Logo-textLink"><h1 class="Logo-heading"><span class="Logo-headingTop">Jacobs</span><span class="Logo-headingBottom">Sierbestrating</span></h1></a>
           </div>
-          <span class="u-objRight">
+          <div class="u-objRight">
             <table class="Table Table--invertedBold">
                 <thead>
                 <tr>
@@ -86,7 +86,7 @@
                 </tr>
                 </tbody>
             </table>
-          </span>
+          </div>
         </div>
     </div>
     <div class="Header-nav">
@@ -100,16 +100,18 @@
         <div class="u-gridContainer">
             <div class="Offer">
                 <div class="Offer-image"></div>
-                <div class="Offer-text">
+                <article class="Offer-text">
                     <h2 class="Offer-title">Garden Concept Line</h2>
                     <p class="Offer-subtitle">20x30cm</p>
-                    <p class="offer-content">Dit is een eerste keus tegel met de befaamde coating. Gemakkelijk in onderhoud, geen alg aangroei, bijna geen witte uitslag.</p>
-                    <div class="price-section">
-                        <p class="offer-oldprice">Van € 19,00</p>
-                        <h3 class="offer-currentprice">Nu € 14,50</h3>
-                        <a href="#" class="Button Button--brand">Bekijk aanbieding</a>
+                    <p class="Offer-content">Dit is een eerste keus tegel met de befaamde coating. Gemakkelijk in onderhoud, geen alg aangroei, bijna geen witte uitslag.</p>
+                    <div class="Offer-priceBlock">
+                      <p class="Offer-oldprice">Van € 19,00</p>
+                      <h3 class="Offer-currentprice">Nu € 14,50</h3>
+                      <div class="Offer-link">
+                        <a href="#" class="Button Button--default">Bekijk aanbieding</a>                     
+                      </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </div>

@@ -42,6 +42,8 @@
 
 .Header-contact {
   @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
   background: rgba($c-black,0.5);
 }
 
@@ -49,6 +51,8 @@
 
 .Header-logo {
   @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
   background: rgba($c-black,0.25);
 }
 
@@ -56,6 +60,8 @@
 
 .Header-nav {
   @extend .u-gridRow;
+  padding-bottom : $l-whiteSpace;
+  padding-top    : $l-whiteSpace;
   background: $c-blue;
 }
 
@@ -63,4 +69,6 @@
 
 .Header-carousel {
   @extend .u-gridRow;
+  padding-bottom : ($l-whiteSpace * 4);
+  padding-top    : ($l-whiteSpace * 4);
 }
