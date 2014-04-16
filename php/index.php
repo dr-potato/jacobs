@@ -7,12 +7,12 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article class="Article" id="post-<?php the_ID(); ?>">
-				<h2 class="Article-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h3 class="Article-heading"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 				<div class="Article-content"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
         <p>Geplaatst op <?php the_time( get_option( 'date_format' ) ); ?> in <?php the_category(', ') ?></p>
         <a class="Button Button--brand" href="<?php the_permalink() ?>" rel="bookmark" title="Ga naar: <?php the_title_attribute(); ?>">
           <span>Lees verder</span>
-          <svg class="Icon" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
+          <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
         </a>
 			</article>
 
@@ -25,7 +25,7 @@
 
 	<?php else : ?>
 
-		<h2>Not Found</h2>
+		<h3>Not Found</h3>
 		<p>Sorry, but you are looking for something that isn't here.</p>
 		<?php get_search_form(); ?>
 

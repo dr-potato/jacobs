@@ -1,12 +1,12 @@
 // *************************************
 //
-// Module
-// -> This is an example module
+// EqualHeight
+// -> A component for equal height cols
 //
 // *************************************
 
-.Article {
-  margin-top: rem(40px);
+.EqualHeight {
+  display: table;
 }
 
 // -------------------------------------
@@ -19,23 +19,31 @@
 // Modifiers
 // -------------------------------------
 
-// ----- Inverted ----- //
+// ----- Carousel ----- //
 
-.Article--inverted {
-  margin-top: rem(10px);
+.EqualHeight--carousel {
+  border-spacing: $l-insideGutter;
 
-  .Article-heading {
-    color: $c-white;
+  .EqualHeight-column {
+    width: 45%;
   }
 
-  .Article-tagline {
-    color: $c-white;
+  .EqualHeight-column--withText {
+    padding-left: $l-insideGutter;
+    padding-right: $l-insideGutter;
+    background: $c-blue;
   }
+}
 
-  .Article-content {
-    color: shade($c-blue, 50%);
-    font-weight: bold;  
-  }
+// ----- With Image ----- //
+
+.EqualHeight-column--withImage {
+  vertical-align: top;
+}
+
+.EqualHeight-column--withImage-image {
+  display: block;
+  width: 100%;
 }
 
 // -------------------------------------
@@ -54,21 +62,9 @@
 // Submodules
 // -------------------------------------
 
-// ----- Title ----- //
+// ----- Column ----- //
 
-.Article-heading {
-  text-transform: uppercase;
-  margin: 0;
-}
-
-// ----- Subtitle ----- //
-
-.Article-tagline {
-  margin: 0;
-  font-weight: bold;
-}
-
-// ----- Content ----- //
-
-.Article-content {
+.EqualHeight-column {
+  display: table-cell;
+  border-collapse: separate;
 }

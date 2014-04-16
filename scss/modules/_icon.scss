@@ -5,13 +5,7 @@
 //
 // *************************************
 
-.Icon {
-  fill: inherit;
-  height: 1em;
-  width: 1em;
-  vertical-align: middle;
-  padding-bottom: 0.2em;
-}
+.Icon {}
 
 // -------------------------------------
 // Module specific variables
@@ -23,7 +17,14 @@
 // Modifiers
 // -------------------------------------
 
-// .Module--modifierName
+.Icon--inline {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  padding-bottom: 0.2em;
+}
+
+.Icon--alone {}
 
 // -------------------------------------
 // States

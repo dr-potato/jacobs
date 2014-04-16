@@ -25,6 +25,10 @@
   display: block;
 }
 
+.u-layoutFullWidth {
+  width: 100%;
+}
+
 // -------------------------------------
 // Grid
 // -------------------------------------
@@ -41,10 +45,6 @@
 // Text
 // -------------------------------------
 
-.u-textCenter {
-  text-align: center;
-}
-
 .u-textShout {
   text-transform: uppercase;
 }
@@ -55,6 +55,18 @@
 
 .u-textLead {
   font-size: 125%;
+}
+
+.u-textRight {
+  text-align: right;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.u-textLeft {
+  text-align: left;
 }
 
 // -------------------------------------
