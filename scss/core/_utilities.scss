@@ -35,6 +35,8 @@
 
 .u-gridContainer {
   @include outer-container;
+  padding-left: $l-insideGutter;
+  padding-right: $l-insideGutter;
 }
 
 .u-gridRow {
