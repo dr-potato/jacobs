@@ -8,6 +8,8 @@
 .Header {
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
+  margin-bottom: $l-whiteSpace;
+  border-bottom: rem(8px) solid $c-blue;
 }
 
 // -------------------------------------
@@ -42,8 +44,8 @@
 
 .Header-contact {
   @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
+  padding-bottom : $l-insideGutter;
+  padding-top    : $l-insideGutter;
   background: rgba($c-black,0.5);
 }
 
@@ -51,8 +53,8 @@
 
 .Header-logo {
   @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
+  padding-bottom : $l-insideGutter;
+  padding-top    : $l-insideGutter;
   background: rgba($c-black,0.25);
 }
 
@@ -60,15 +62,15 @@
 
 .Header-nav {
   @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
+  padding-bottom : $l-insideGutter;
+  padding-top    : $l-insideGutter;
   background: $c-blue;
 }
 
 // ----- Carousel ----- //
 
 .Header-carousel {
-  @extend .u-gridRow;
-  padding-bottom : ($l-whiteSpace * 4);
-  padding-top    : ($l-whiteSpace * 4);
+  @extend .u-gridContainer;
+  padding-bottom : $l-insideGutter;
+  padding-top    : $l-insideGutter;
 }

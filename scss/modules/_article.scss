@@ -6,7 +6,6 @@
 // *************************************
 
 .Article {
-  margin-top: rem(40px);
 }
 
 // -------------------------------------
@@ -33,7 +32,7 @@
   }
 
   .Article-content {
-    color: shade($c-blue, 50%);
+    color: darken($c-blue, 15%);
     font-weight: bold;  
   }
 }
@@ -71,4 +70,12 @@
 // ----- Content ----- //
 
 .Article-content {
+}
+
+// ----- Details ----- //
+
+.Article-details {
+  text-transform: uppercase;
+  color: $c-blue;
+  font-weight: bold;
 }

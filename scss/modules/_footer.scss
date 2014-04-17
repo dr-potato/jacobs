@@ -1,12 +1,13 @@
 // *************************************
 //
-// EqualHeight
-// -> A component for equal height cols
+// Footer
+// -> A module for the footer
 //
 // *************************************
 
-.EqualHeight {
-  display: table;
+.Footer {
+  color: $c-white;
+  background: $c-blue;
 }
 
 // -------------------------------------
@@ -19,32 +20,7 @@
 // Modifiers
 // -------------------------------------
 
-// ----- Carousel ----- //
-
-.EqualHeight--carousel {
-  border-spacing: $l-insideGutter;
-
-  .EqualHeight-column {
-    width: 45%;
-  }
-
-  .EqualHeight-column--withText {
-    padding-left: ( $l-insideGutter * 2 );
-    padding-right: ( $l-insideGutter * 2 );
-    background: $c-blue;
-  }
-}
-
-// ----- With Image ----- //
-
-.EqualHeight-column--withImage {
-  vertical-align: top;
-}
-
-.EqualHeight-column--withImage-image {
-  display: block;
-  width: 100%;
-}
+// .Module--modifierName
 
 // -------------------------------------
 // States
@@ -62,9 +38,33 @@
 // Submodules
 // -------------------------------------
 
-// ----- Column ----- //
+// ----- Nav ----- //
 
-.EqualHeight-column {
-  display: table-cell;
-  border-collapse: separate;
+.Footer-nav {
+  @extend .u-gridContainer;
+}
+
+// ----- Legal ----- //
+
+.Footer-legal {
+  @extend .u-gridRow;
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+  background: darken($c-blue, 15%);
+  font-size: 75%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+// ----- List ----- //
+
+.Footer-list {
+  text-transform: uppercase;
+  font-size: rem(12px);
+}
+
+// ----- Link ----- //
+
+.Footer-link {
+  color: $c-white;
 }

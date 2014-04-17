@@ -96,7 +96,7 @@
         </div>
     </div>
     <?php if(is_front_page()) {?><!-- Display banner only on the frontpage -->
-    <div class="u-gridContainer">
+    <div class="Header-carousel">
       <div class="EqualHeight EqualHeight--carousel">
         <div class="EqualHeight-column EqualHeight-column--withImage">
           <img class="EqualHeight-column--withImage-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-aanbieding.jpg" alt="" />      

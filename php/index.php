@@ -6,10 +6,10 @@
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<article class="Article" id="post-<?php the_ID(); ?>">
+			<article class="Article u-layoutExtraSpace" id="post-<?php the_ID(); ?>">
 				<h3 class="Article-heading"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 				<div class="Article-content"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
-        <p>Geplaatst op <?php the_time( get_option( 'date_format' ) ); ?> in <?php the_category(', ') ?></p>
+        <p class="Article-details">Geplaatst op <?php the_time( get_option( 'date_format' ) ); ?> in <?php the_category(', ') ?></p>
         <a class="Button Button--brand" href="<?php the_permalink() ?>" rel="bookmark" title="Ga naar: <?php the_title_attribute(); ?>">
           <span>Lees verder</span>
           <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
