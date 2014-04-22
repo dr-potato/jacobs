@@ -1,12 +1,15 @@
 // *************************************
 //
-// Navigation
-// -> Reusable navigation module
+// Line
+// -> Standard line module
 //
 // *************************************
 
-.Navigation {
-  text-align: center;
+.Line {
+  border: 0;
+  color: $c-white;
+  background-color: $c-white;
+  height: rem(2px);
 }
 
 // -------------------------------------
@@ -19,13 +22,13 @@
 // Modifiers
 // -------------------------------------
 
+// .Module--modifierName
+
 // -------------------------------------
 // States
 // -------------------------------------
 
-.Navigation-link.is-active {
-  text-decoration: underline;
-}
+// .is-module-state
 
 // -------------------------------------
 // Context
@@ -37,23 +40,6 @@
 // Submodules
 // -------------------------------------
 
-// ----- List item ----- //
+// ----- Submodule ----- //
 
-.Navigation-listItem {
-  display: inline;
-  margin: 0 rem(15px);
-  &:first-of-type {
-    margin-left: 0;
-  }
-  &:last-of-type {
-    margin-right: 0;
-  }
-}
-
-// ----- Navigation link ----- //
-
-.Navigation-link {
-  color: $c-white; 
-  text-transform: uppercase;
-  font-weight: bold;
-}
+// .Module-subModule

@@ -1,12 +1,12 @@
 // *************************************
 //
-// Navigation
-// -> Reusable navigation module
+// Sitemap
+// -> The footer sitemap
 //
 // *************************************
 
-.Navigation {
-  text-align: center;
+.Select {
+  color: $c-black;
 }
 
 // -------------------------------------
@@ -19,13 +19,15 @@
 // Modifiers
 // -------------------------------------
 
+.Select--sitemap {
+  font-size: rem(12px);
+}
+
 // -------------------------------------
 // States
 // -------------------------------------
 
-.Navigation-link.is-active {
-  text-decoration: underline;
-}
+// .is-module-state
 
 // -------------------------------------
 // Context
@@ -37,23 +39,6 @@
 // Submodules
 // -------------------------------------
 
-// ----- List item ----- //
+// ----- Submodule ----- //
 
-.Navigation-listItem {
-  display: inline;
-  margin: 0 rem(15px);
-  &:first-of-type {
-    margin-left: 0;
-  }
-  &:last-of-type {
-    margin-right: 0;
-  }
-}
-
-// ----- Navigation link ----- //
-
-.Navigation-link {
-  color: $c-white; 
-  text-transform: uppercase;
-  font-weight: bold;
-}
+// .Module-subModule

@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 
       /* Clone our navigation(s) */
       var counter = 0;
-      $('#menu-footermenu').each(function(){
+      $('.Select--sitemap ul').each(function(){
       	  var mainNavigation = $(this).clone();
 
         /* Replace unordered list with a "select" element to be populated with options, 

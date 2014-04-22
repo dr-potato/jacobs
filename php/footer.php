@@ -1,23 +1,23 @@
 <footer class="Footer">
   <div class="Footer-nav">
-    <div class="u-col3">
+    <div class="Footer-column">
     <div class="Logo">
-        <a href="/" class="Logo-textLink"><h1 class="Logo-heading"><span class="Logo-headingTop">Jacobs</span><span class="Logo-headingBottom">Sierbestrating</span></h1></a>
-        <hr>
+        <a href="/" class="Logo-textLink"><h1 class="Logo-heading Logo-heading--footer"><span class="Logo-headingTop">Jacobs</span><span class="Logo-headingBottom">Sierbestrating</span></h1></a>
+        <hr class="Line">
         <p>Laguitensebaan 49<br>
         4891 XR Rijsbergen</p>
     </div>    
     </div>
-    <div class="u-col3">
+    <div class="Footer-column">
       <h5>Info</h5>
-      <dl class="Footer-list">
-        <dt>Kvk Breda</dt><dd>20079681</dd>
-        <dt>Btw</dt><dd>NL 8044 54 322 B 01</dd>
-        <dt>Iban</dt><dd>NL58 RABO 0145324605</dd>
-        <dt>Swift</dt><dd>RABONL2U</dd>
-      </dl>
+      <ul class="Footer-list">
+        <li>Kvk Breda: 20079681</li>
+        <li>Btw: NL 8044 54 322 B 01</li>
+        <li>Iban: NL58 RABO 0145324605</li>
+        <li>Swift: RABONL2U</li>
+      </ul>
     </div>
-    <div class="u-col3">
+    <div class="Footer-column">
       <h5>Contact</h5>
       <ul class="Footer-list">
         <li>
@@ -40,8 +40,9 @@
         </li>
       </ul>
     </div>
-    <div class="u-col3">
+    <div class="Footer-column">
       <h5>Sitemap</h5>
+      <?php include 'includes/sitemap.php'; ?>
     </div>
   </div>
   <!-- Copyright info -->
