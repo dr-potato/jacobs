@@ -9,7 +9,8 @@
   display: inline-block;
   font-weight: bold;
   padding: rem(10px) rem(5px);
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 }
@@ -29,6 +30,10 @@
 .Button--default {
   color: $c-white;
   fill: $c-white;
+  transition: background 0.25s ease ;
+  &:hover {
+    background: rgba($c-white, 0.25);
+  }
 }
 
 // ----- Brand ----- //
@@ -37,6 +42,10 @@
   color: $c-white;
   fill: $c-white;
   background: $c-blue;
+  transition: background 0.25s ease ;
+  &:hover {
+    background: darken($c-blue, 5%);
+  }
 }
 
 // -------------------------------------

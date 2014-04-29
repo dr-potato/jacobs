@@ -46,7 +46,7 @@
   @extend .u-gridRow;
   padding-bottom : $l-insideGutter;
   padding-top    : $l-insideGutter;
-  background: rgba($c-black,0.5);
+  background: rgba($c-black,0.75);
 }
 
 // ----- Contact bar ----- //
@@ -55,7 +55,7 @@
   @extend .u-gridRow;
   padding-bottom : $l-insideGutter;
   padding-top    : $l-insideGutter;
-  background: rgba($c-black,0.25);
+  background: rgba($c-black,0.5);
 }
 
 // ----- Nav bar ----- //

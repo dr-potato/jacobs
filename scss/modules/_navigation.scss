@@ -53,6 +53,8 @@
 // ----- Navigation link ----- //
 
 .Navigation-link {
+  @extend .Button;
+  @extend .Button--brand;
   color: $c-white; 
   text-transform: uppercase;
   font-weight: bold;
