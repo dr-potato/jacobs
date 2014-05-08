@@ -38,6 +38,13 @@
   padding-top: rem(16px);
 }
 
+.Logo-image {
+  max-height: 135px;
+  @include media($bp-logo) {
+    max-height: none;
+  }
+}
+
 .Logo-textLink,
 .Logo-heading,
 .Logo-imageLink {
@@ -54,12 +61,18 @@
 }
 
 .Logo-headingTop {
+  font-size: rem(40px);
   font-family: 'Hobo', sans-serif;
-  font-size: rem(60px);
   text-align: center;
   text-transform: uppercase;
+  @include media($bp-logo) {
+    font-size: rem(60px);
+  }
 }
 
 .Logo-headingBottom {
-  font-size: rem(30px);
+  font-size: rem(20px);
+  @include media($bp-logo) {
+    font-size: rem(30px);
+  }
 }

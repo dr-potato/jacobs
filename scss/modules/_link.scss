@@ -1,36 +1,30 @@
 // *************************************
 //
-// Table
-// -> A module for beating tables into
-//    submission
+// Link
+// -> Customize the appearance of links
+//
 // *************************************
 
-.Table {
-  text-transform: uppercase;
-
-  @include media(max-width $bp-logo) {
-    text-align: left;
-  }
-
-  @include media(max-width $bp-navCollapse) {
-    margin: 0 auto;
-    margin-bottom: 1rem;
-  }
-}
+.Link {}
 
 // -------------------------------------
 // Module specific variables
 // -------------------------------------
 
-// -variable
+// Module-variableName
 
 // -------------------------------------
 // Modifiers
 // -------------------------------------
 
-.Table--invertedBold {
+.Link--legal {
   color: $c-white;
-  font-weight: bold;
+  border-bottom: 1px dashed $c-white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // -------------------------------------
@@ -49,6 +43,6 @@
 // Submodules
 // -------------------------------------
 
-.Table-heading {
-  padding-bottom: $l-insideGutter;
-}
+// ----- Submodule ----- //
+
+// .Module-subModule

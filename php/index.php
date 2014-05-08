@@ -18,9 +18,9 @@
 
 		<?php endwhile; ?>
 
-		<nav>
-			<div><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+		<nav class="Pagination">
+			<?php next_posts_link('&laquo; Oudere berichten') ?>
+			<?php previous_posts_link('Nieuwere berichten &raquo;') ?>
 		</nav>
 
 	<?php else : ?>

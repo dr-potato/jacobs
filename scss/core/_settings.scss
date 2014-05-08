@@ -58,3 +58,12 @@ $t-fontFamily       : 'Open Sans', $helvetica;
 $t-headerFontFamily : 'Open Sans', $helvetica;
 $t-fontSize         : 16px;
 $t-lineHeight       : 1.5;
+
+// ----- Breakpoints ----- //
+
+$bp-navCollapse: 1000px;
+$bp-logo: 400px;
+
+// ----- Z-indexes ----- //
+
+$z-dropdown: 100;

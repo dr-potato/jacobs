@@ -45,7 +45,7 @@
 
 @import "modules/button";
 
-@import "modules/equalheight";
+@import "modules/carousel";
 
 @import "modules/footer";
 
@@ -61,8 +61,19 @@
 
 @import "modules/line";
 
+@import "modules/link";
+
 @import "modules/select";
 
 // -------------------------------------
 // Inbox
 // -------------------------------------
+
+.Pagination {
+  display: table;
+  margin: 0 auto 2rem;
+  a {
+    @extend .Button;
+    @extend .Button--brand;
+  }
+}

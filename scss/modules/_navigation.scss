@@ -13,8 +13,6 @@
 // Module specific variables
 // -------------------------------------
 
-// Module-variableName
-
 // -------------------------------------
 // Modifiers
 // -------------------------------------
@@ -24,7 +22,7 @@
 // -------------------------------------
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+  background: darken($c-blue, 5%);
 }
 
 // -------------------------------------
@@ -40,14 +38,20 @@
 // ----- List item ----- //
 
 .Navigation-listItem {
-  display: inline;
-  margin: 0 rem(15px);
-  &:first-of-type {
-    margin-left: 0;
+  @include media($bp-navCollapse) {
+    display: inline;
+    margin: 0 rem(15px);
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }  
   }
-  &:last-of-type {
-    margin-right: 0;
-  }
+}
+
+.Navigation-listItem--hasDropdown {
+  position: relative;
 }
 
 // ----- Navigation link ----- //
@@ -58,4 +62,76 @@
   color: $c-white; 
   text-transform: uppercase;
   font-weight: bold;
+  display: block;
+  @include media($bp-navCollapse) {
+    display: inline-block;
+  }
+}
+
+.Navigation-link--dropdownTrigger::after {
+  content: "\25bc";
+  font-size: 60%;
+  vertical-align: middle;
+}
+
+// ----- Navigation List ----- //
+
+.Navigation-list {
+    display: block;
+}
+
+.Navigation-list--dropdown {
+  z-index: $z-dropdown;
+
+  @include media(max-width $bp-navCollapse) {
+    .Navigation-link {
+      background: darken($c-blue, 5%);
+    }
+  }
+
+  @include media($bp-navCollapse) {
+    border-top: 3px solid darken($c-blue, 5%);
+    background: $c-blue;
+    position: absolute;
+    left: -1rem; // Offset Navigation-link left padding
+    margin-top: $l-insideGutter; // Same as Header-nav bottom padding
+    text-align: left;   
+
+    .Navigation-listItem {
+      display: block;
+      margin: 0;
+    }
+
+    .Navigation-link {
+      display: block;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.Navigation-list.is-hidden {
+    display: none;
+}
+
+// ----- Menu toggle ----- //
+
+.Navigation-toggle {
+  @extend .Button;
+  @extend .Button--brand;
+}
+
+.Navigation-list--parent {
+  display: none;
+  @include media($bp-navCollapse) {
+    display: block;
+  }
+}
+
+.Navigation-toggle {
+  display: block;
+
+  @include media($bp-navCollapse) {
+    display: none;
+  }
 }

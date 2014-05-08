@@ -49,7 +49,7 @@
   <div class="Footer-legal">
     <div class="u-gridContainer">
         <div class="u-textCenter">
-          &copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Algemene voorwaarden - Built by Lokaalgevonden
+          &copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - <a href="#" class="Link Link--legal">Algemene voorwaarden</a> - Built by <a href="#" title="Lokaalgevonden" class="Link Link--legal">Lokaalgevonden</a>
         </div>
       </div>
   </div>
@@ -61,6 +61,9 @@
 
 	<!-- Footer javascript below here -->
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/production.min.js"></script>
+
+  <!-- Livereload -->
+  <script src="http://localhost:35729/livereload.js"></script>
 
   <!-- Check if javascript for threaded comments should be loaded -->
   <?php include 'includes/comment-check.php'; ?>

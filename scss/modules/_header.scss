@@ -56,6 +56,9 @@
   padding-bottom : $l-insideGutter;
   padding-top    : $l-insideGutter;
   background: rgba($c-black,0.5);
+  @include media (max-width $bp-logo) {
+    text-align: center;
+  }
 }
 
 // ----- Nav bar ----- //
@@ -70,7 +73,7 @@
 // ----- Carousel ----- //
 
 .Header-carousel {
-  @extend .u-gridContainer;
+  @extend .u-gridRow;
   padding-bottom : $l-insideGutter;
   padding-top    : $l-insideGutter;
 }

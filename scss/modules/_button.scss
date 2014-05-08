@@ -6,12 +6,15 @@
 // *************************************
 
 .Button {
-  display: inline-block;
+  display: block;
   font-weight: bold;
   padding: rem(10px) rem(5px);
   &:hover,
   &:focus {
     text-decoration: none;
+  }
+  @include media($bp-navCollapse) {
+    display: inline-block;
   }
 }
 

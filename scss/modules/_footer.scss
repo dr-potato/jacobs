@@ -56,6 +56,7 @@
   font-size: 75%;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 2;
 }
 
 // ----- List ----- //
@@ -74,8 +75,13 @@
 // ----- Column ----- //
 
 .Footer-column {
-  @include span-columns(3);
-  &:not(:first-of-type) {
-    padding: 0 rem(10px);
+  @include span-columns(12);
+  padding: 0 1rem;
+  @include media($bp-navCollapse) {
+    @include span-columns(3);
+    padding: 0;
+    &:not(:first-of-type) {
+      padding: 0 rem(10px);
+    }
   }
 }

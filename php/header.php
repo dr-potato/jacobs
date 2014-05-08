@@ -61,7 +61,7 @@
     <div class="Header-logo">
         <div class="u-gridContainer">
           <div class="Logo">
-              <a href="/" class="Logo-imageLink"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-jacobs.svg" alt="Jacobs Sierbestrating Logo"></a>
+              <a href="/" class="Logo-imageLink"><img class="Logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-jacobs.svg" alt="Jacobs Sierbestrating Logo"></a>
               <a href="/" class="Logo-textLink"><h1 class="Logo-heading"><span class="Logo-headingTop">Jacobs</span><span class="Logo-headingBottom">Sierbestrating</span></h1></a>
           </div>
           <div class="u-objRight">
@@ -95,27 +95,54 @@
             <?php include 'includes/navigation.php'; ?>
         </div>
     </div>
-    <?php if(is_front_page()) {?><!-- Display banner only on the frontpage -->
+    <?php if(is_front_page()) {?>
     <div class="Header-carousel">
-      <div class="EqualHeight EqualHeight--carousel">
-        <div class="EqualHeight-column EqualHeight-column--withImage">
-          <img class="EqualHeight-column--withImage-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-aanbieding.jpg" alt="" />      
-        </div>
-        <div class="EqualHeight-column EqualHeight-column--withText">
-          <article class="Article Article--inverted u-textShout">
-            <h3 class="Article-heading">Garden Concept Line</h3>
-            <p class="Article-tagline">20x30cm</p>
-            <p class="Article-content">Dit is een eerste keus tegel met de befaamde coating. Gemakkelijk in onderhoud, geen alg aangroei, bijna geen witte uitslag.</p>
-            <div class="u-textRight u-objRight">
-              <p class="Article-content">Van € 19,00</p>
-              <h3 class="Article-heading">Nu € 14,50</h3>
-              <a href="#" class="Button Button--brand">
-                <span class="u-textShout u-textFat">Bekijk aanbieding</span>
-                <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
-              </a>
+      <div class="Carousel">
+        <ul class="Carousel-slideContainer cycle-slideshow" 
+          data-cycle-slides=".Carousel-slide" 
+          data-cycle-speed="1500">
+          <li class="Carousel-slide">
+            <div class="Carousel-imageColumn">
+              <img class="Carousel-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-aanbieding.jpg" alt="" />      
             </div>
-          </div>
-        </div>
+            <div class="Carousel-textColumn">
+              <article class="Article Article--inverted u-textShout">
+                <h3 class="Article-heading">Garden Concept Line</h3>
+                <p class="Article-tagline">20x30cm</p>
+                <p class="Article-content">Dit is een eerste keus tegel met de befaamde coating. Gemakkelijk in onderhoud, geen alg aangroei, bijna geen witte uitslag.</p>
+                <div class="u-textRight u-objRight">
+                  <p class="Article-content">Van € 19,00</p>
+                  <h3 class="Article-heading">Nu € 14,50</h3>
+                  <a href="#" class="Button Button--brand">
+                    <span class="u-textShout u-textFat">Bekijk aanbieding</span>
+                    <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </li>
+          <li class="Carousel-slide">
+            <div class="Carousel-imageColumn">
+              <img class="Carousel-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-aanbieding.jpg" alt="" />      
+            </div>
+            <div class="Carousel-textColumn">
+              <article class="Article Article--inverted u-textShout">
+                <h3 class="Article-heading">Garden Concept Line</h3>
+                <p class="Article-tagline">20x30cm</p>
+                <p class="Article-content">Dit is een eerste keus tegel met de befaamde coating. Gemakkelijk in onderhoud, geen alg aangroei, bijna geen witte uitslag.</p>
+                <div class="u-textRight u-objRight">
+                  <p class="Article-content">Van € 19,00</p>
+                  <h3 class="Article-heading">Nu € 14,50</h3>
+                  <a href="#" class="Button Button--brand">
+                    <span class="u-textShout u-textFat">Bekijk aanbieding</span>
+                    <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </li>
+        </ul>
+
       </div>
     </div>
     <?php }?>

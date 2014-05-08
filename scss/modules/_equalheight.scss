@@ -6,7 +6,9 @@
 // *************************************
 
 .EqualHeight {
-  display: table;
+  @include media($bp-navCollapse) {
+    display: table;
+  }
 }
 
 // -------------------------------------
@@ -25,7 +27,9 @@
   border-spacing: $l-insideGutter;
 
   .EqualHeight-column {
-    width: 45%;
+    @include media($bp-navCollapse) {
+      width: 45%;
+    }
   }
 
   .EqualHeight-column--withText {
@@ -65,6 +69,8 @@
 // ----- Column ----- //
 
 .EqualHeight-column {
-  display: table-cell;
-  border-collapse: separate;
+  @include media($bp-navCollapse) {
+    display: table-cell;
+    border-collapse: separate;
+  }
 }

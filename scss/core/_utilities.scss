@@ -80,9 +80,13 @@
 // -------------------------------------
 
 .u-objLeft {
-  float: left;
+  @include media($bp-navCollapse) {
+    float: left;   
+  }
 }
 
 .u-objRight {
-  float: right;
+  @include media($bp-navCollapse) {
+    float: right;
+  }
 }
