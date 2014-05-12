@@ -70,8 +70,9 @@
 // -------------------------------------
 
 .Pagination {
-  display: table;
-  margin: 0 auto 2rem;
+  text-align: center;
+  padding: 1rem 0;
+
   a {
     @extend .Button;
     @extend .Button--brand;

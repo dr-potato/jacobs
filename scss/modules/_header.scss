@@ -9,7 +9,6 @@
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
   margin-bottom: $l-whiteSpace;
-  border-bottom: rem(8px) solid $c-blue;
 }
 
 // -------------------------------------
@@ -76,4 +75,5 @@
   @extend .u-gridRow;
   padding-bottom : $l-insideGutter;
   padding-top    : $l-insideGutter;
+  border-bottom: rem(8px) solid $c-blue;
 }

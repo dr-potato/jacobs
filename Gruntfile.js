@@ -171,7 +171,7 @@ module.exports = function(grunt) {
         src: '<%= dirs.dev_css_build %>',
         dest: '<%= dirs.prod_css %>',
         simple: true,
-        useList: false
+        useList: true
       },
       css_wordpress: {
         auth: {
@@ -183,7 +183,7 @@ module.exports = function(grunt) {
         dest: '<%= dirs.prod_theme_current %>',
         exclusions: ['/build'],
         simple: true,
-        useList: false
+        useList: true
       },
       js_standalone: {
         auth: {
@@ -194,7 +194,7 @@ module.exports = function(grunt) {
         src: '<%= dirs.dev_js_standalone %>',
         dest: '<%= dirs.prod_js_standalone %>',
         simple: true,
-        useList: false
+        useList: true
       },
       js_prod: {
         auth: {
@@ -206,7 +206,7 @@ module.exports = function(grunt) {
         dest: '<%= dirs.prod_js %>',
         keep: ['/standalone/*.js'],
         simple: true,
-        useList: false
+        useList: true
       },
       img_prod: {
         auth: {
@@ -217,7 +217,7 @@ module.exports = function(grunt) {
         src: '<%= dirs.dev_img_build %>',
         dest: '<%= dirs.prod_img %>',
         simple: true,
-        useList: false
+        useList: true
       },
       ico_prod: {
         auth: {
@@ -228,7 +228,7 @@ module.exports = function(grunt) {
         src: '<%= dirs.dev_ico_build %>',
         dest: '<%= dirs.prod_theme_current %>',
         simple: true,
-        useList: false
+        useList: true
       },
       php_prod: {
         auth: {
@@ -240,7 +240,7 @@ module.exports = function(grunt) {
         dest: '<%= dirs.prod_theme_current %>',
         keep: ['!*.php'],
         simple: true,
-        useList: false
+        useList: true
       }
     },
 

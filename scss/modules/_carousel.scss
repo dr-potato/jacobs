@@ -43,6 +43,12 @@ $carousel-height: 25rem;
   padding-top: $carousel-height;
   position: relative;
   overflow: hidden;
+  @include media (max-width $bp-carousel) {
+    @include span-columns(12);
+    position: relative;
+    padding-top: 0;
+    height: auto;
+  }
 }
 
 .Carousel-image {
@@ -51,12 +57,48 @@ $carousel-height: 25rem;
   left: 0;
   width: 100%;
   height: 100%;
+  @include media (max-width $bp-carousel) {
+    position: static;
+  }
 }
 
 .Carousel-textColumn {
   @include span-columns(6);
   padding-left: ( $l-insideGutter * 2 );
   padding-right: ( $l-insideGutter * 2 );
+  padding-bottom: 1rem;
   background: $c-blue;
   min-height: $carousel-height;
+  @include media (max-width $bp-carousel) {
+    @include span-columns(12);
+    min-height: 0;
+  }
+}
+
+.Carousel-slideContainer {
+  width: 100%;
+}
+
+// ----- Controls ----- //
+
+.Carousel-controls {
+  text-align: right;
+  padding: 2rem 0 1rem;
+}
+
+.Carousel-controlsPrev,
+.Carousel-controlsNext {
+  display: inline-block;
+
+  a {
+    color: white;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.Carousel-controlsPrev {
+  margin-right: 0.5rem;
 }
