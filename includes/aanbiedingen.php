@@ -15,7 +15,7 @@
           <article class="Article Article--inverted u-textShout">
             <h3 class="Article-heading"><?php the_title(); ?></h3>
             <p class="Article-tagline"><?php the_field('ondertitel'); ?></p>
-            <p class="Article-content"><?php the_content(); ?></p>
+            <div class="Article-content"><?php the_content(); ?></div>
             <div class="u-textRight u-objRight">
               <p class="Article-content"><?php the_field('oude_prijs'); ?></p>
               <h3 class="Article-heading"><?php the_field('huidige_prijs'); ?></h3>

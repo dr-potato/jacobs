@@ -6,7 +6,7 @@ $(document).ready(function(){
     adaptiveHeightSpeed: 500,
     pager: false,
     auto: true,
-    pause: 4000,
+    pause: 12000,
     autoHover: true,
     nextSelector: '#js-Carousel-controlsNext',
     nextText: 'Volgende',

@@ -37,6 +37,33 @@
   }
 }
 
+// ----- Aanbieding ----- //
+
+.Article--aanbieding {
+  overflow: hidden;
+
+  .Article-imageWrap {
+    @include span-columns(6);
+    float: right;
+    position: relative;
+    height: 0;
+    @include media (max-width $bp-aanbieding) {
+      @include span-columns(12);
+      float: none;
+      position: static;
+      height: auto;
+    }
+  }
+
+  .Article-textColumn {
+    @include span-columns(6);
+    @include media (max-width $bp-aanbieding) {
+      @include span-columns(12);
+    }
+  }
+
+}
+
 // -------------------------------------
 // States
 // -------------------------------------
@@ -64,7 +91,9 @@
 
 .Article-tagline {
   margin: 0;
+  color: $c-blue;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 // ----- Content ----- //
