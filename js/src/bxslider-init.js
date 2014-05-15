@@ -14,3 +14,9 @@ $(document).ready(function(){
     prevText: 'Vorige'
   });
 });
+
+// Set carousel to normal height
+
+$(document).ready(function(){
+  $('.Carousel').toggleClass('is-collapsed');
+});

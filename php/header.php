@@ -97,7 +97,7 @@
     </div>
     <?php if(is_front_page()) {?>
     <div class="Header-carousel">
-      <div class="Carousel">
+      <div class="Carousel is-collapsed">
         <ul class="Carousel-slideContainer bxslider">
           <?php include 'includes/aanbiedingen.php'; ?>
         </ul>

@@ -25,7 +25,7 @@ Template Name: Aanbiedingen
         <h3 class="Article-heading"><?php the_title(); ?></h3>
         <p class="Article-tagline"><?php the_field('ondertitel'); ?> - <?php the_field('oude_prijs'); ?> - <?php the_field('huidige_prijs'); ?></p>
         <div class="Article-content"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
-        <p class="Article-details">Geplaatst op <?php the_time( get_option( 'date_format' ) ); ?> in Aanbiedingen</p>
+        <!-- <p class="Article-details">Geplaatst op <?php the_time( get_option( 'date_format' ) ); ?> in Aanbiedingen</p> -->
       </div>
     </article>
 

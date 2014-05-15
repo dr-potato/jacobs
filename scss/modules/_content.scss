@@ -1,0 +1,71 @@
+// *************************************
+//
+// Content
+//
+// *************************************
+
+.Content {
+  @extend .u-gridContainer;
+  padding-bottom: 5rem;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// Module-variableName
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+.Content-sidebar {
+  @include span-columns(4);
+  @include shift(1);
+  background: $c-blue;
+  padding: 1rem;
+
+  h3,
+  .gform_description {
+    color: $c-white;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .gform_heading {
+    margin-bottom: 3rem;
+  }
+}
+
+.Content-main {
+  @include span-columns(7);
+}
+
+.Content-articles--half {
+  @include span-columns(3 of 7);
+  margin-bottom: 2rem;
+}
+
+.Content-articles--half:last-of-type {
+  @include shift(1);
+}

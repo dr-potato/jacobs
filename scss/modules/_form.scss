@@ -1,0 +1,60 @@
+// *************************************
+//
+// Form
+// -> Default form elements
+//
+// *************************************
+
+.Form {
+  text-align: left;
+
+  label {
+    display: none;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5em;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5em;
+  }
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// Module-variableName
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// .Module--modifierName
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+// ----- Input fields ----- //
+
+.gform_heading {
+    margin-bottom: 1rem;
+}

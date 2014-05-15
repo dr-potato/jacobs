@@ -25,7 +25,10 @@ $carousel-height: 25rem;
 // States
 // -------------------------------------
 
-// .is-module-state
+.Carousel.is-collapsed {
+  height: $carousel-height;
+  overflow: hidden;
+}
 
 // -------------------------------------
 // Context

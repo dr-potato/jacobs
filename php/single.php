@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="u-gridContainer">
+<main class="Content">
 
   <?php if (have_posts()) : ?>
 

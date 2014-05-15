@@ -15,12 +15,12 @@
           <article class="Article Article--inverted u-textShout">
             <h3 class="Article-heading"><?php the_title(); ?></h3>
             <p class="Article-tagline"><?php the_field('ondertitel'); ?></p>
-            <div class="Article-content"><?php the_content(); ?></div>
+            <div class="Article-content"><?php the_excerpt(); ?></div>
             <div class="u-textRight u-objRight">
               <p class="Article-content"><?php the_field('oude_prijs'); ?></p>
               <h3 class="Article-heading"><?php the_field('huidige_prijs'); ?></h3>
-              <a href="#" class="Button Button--brand">
-                <span class="u-textShout u-textFat">Bekijk aanbieding</span>
+              <a href="/onze-aanbiedingen" class="Button Button--brand">
+                <span class="u-textShout u-textFat">Bekijk aanbiedingen</span>
                 <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
               </a>
             </div>
