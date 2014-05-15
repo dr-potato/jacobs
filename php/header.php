@@ -74,11 +74,11 @@
                 <tbody>
                 <tr>
                     <td>Ma t/m vr</td>
-                    <td>7:00 t/m 17:00</td>
+                    <td>9:00 t/m 18:00</td>
                 </tr>
                 <tr>
                     <td>Zaterdag</td>
-                    <td>8:30 t/m 12:30</td>
+                    <td>8:00 t/m 16:00</td>
                 </tr>
                 <tr>
                     <td>Zondag</td>
