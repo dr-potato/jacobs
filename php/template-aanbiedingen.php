@@ -8,13 +8,13 @@ Template Name: Aanbiedingen
 
 <main class="u-gridContainer">
 
-  <?php 
-    $temp = $wp_query; 
-    $wp_query = null; 
-    $wp_query = new WP_Query(); 
-    $wp_query->query('showposts=3&post_type=aanbieding'.'&paged='.$paged); 
+  <?php
+    $temp = $wp_query;
+    $wp_query = null;
+    $wp_query = new WP_Query();
+    $wp_query->query('showposts=3&post_type=aanbieding'.'&paged='.$paged);
 
-    while ($wp_query->have_posts()) : $wp_query->the_post(); 
+    while ($wp_query->have_posts()) : $wp_query->the_post();
   ?>
 
     <article class="Article Article--aanbieding u-layoutExtraSpace" id="post-<?php the_ID(); ?>">
@@ -25,7 +25,6 @@ Template Name: Aanbiedingen
         <h3 class="Article-heading"><?php the_title(); ?></h3>
         <p class="Article-tagline"><?php the_field('ondertitel'); ?> - <?php the_field('oude_prijs'); ?> - <?php the_field('huidige_prijs'); ?></p>
         <div class="Article-content"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
-        <!-- <p class="Article-details">Geplaatst op <?php the_time( get_option( 'date_format' ) ); ?> in Aanbiedingen</p> -->
       </div>
     </article>
 
@@ -36,8 +35,8 @@ Template Name: Aanbiedingen
       <?php previous_posts_link('Nieuwere aanbiedingen &raquo;') ?>
   </nav>
 
-  <?php 
-    $wp_query = null; 
+  <?php
+    $wp_query = null;
     $wp_query = $temp;  // Reset
   ?>
 
