@@ -56,7 +56,7 @@
           <span>info@jacobssierbestrating.nl</span>
         </a>
         <span class="u-objRight">
-          <a href="#" class="Button Button--brand">
+          <a href="http://webshop.jacobssierbestrating.nl" class="Button Button--brand">
             <span>Ga naar webshop</span>
             <svg class="Icon Icon--inline" viewBox="0 0 128 128"><use xlink:href="#icon-arrow-right2"></use></svg>
           </a>
