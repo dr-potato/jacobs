@@ -1,6 +1,6 @@
 <?php
   $args = array(
-    'post_type' => 'aanbieding',
+    'post_type' => 'aanbieding', 'posts_per_page'=>'-1'
     );
   $aanbiedingen = new WP_Query( $args );
   if( $aanbiedingen->have_posts() ) {

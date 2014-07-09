@@ -12,7 +12,7 @@ Template Name: Aanbiedingen
     $temp = $wp_query;
     $wp_query = null;
     $wp_query = new WP_Query();
-    $wp_query->query('showposts=3&post_type=aanbieding'.'&paged='.$paged);
+    $wp_query->query('showposts=10&post_type=aanbieding'.'&paged='.$paged);
 
     while ($wp_query->have_posts()) : $wp_query->the_post();
   ?>
@@ -31,7 +31,7 @@ Template Name: Aanbiedingen
   <?php endwhile; ?>
 
   <nav class="Pagination">
-      <?php next_posts_link('&laquo; Oudere aanbiedingen') ?>
+      <?php next_posts_link('&laquo; Meer aanbiedingen') ?>
       <?php previous_posts_link('Nieuwere aanbiedingen &raquo;') ?>
   </nav>
 
