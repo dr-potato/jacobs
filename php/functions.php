@@ -18,4 +18,13 @@
       ));
   }
 
+  register_sidebar( 
+  	array(
+  		'name'=> 'Openingstijden',
+  		'id'=>'openingstijden',
+  		'before_widget'=>'<div>',
+  		'before_widget'=>'</div>',
+    )
+  ); 
+
 ?>

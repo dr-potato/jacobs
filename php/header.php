@@ -25,7 +25,16 @@
 	<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/app-icon.png"/>  
     <link rel="apple-touch-startup-image" href="<?php echo get_stylesheet_directory_uri(); ?>/img/app-icon.png" /> 
 
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+ ga('create', 'UA-51482090-21', 'auto');
+ ga('send', 'pageview');
+
+</script>
 
 
     <!-- Include only one concatenated stylesheet here, minified -->
@@ -69,28 +78,8 @@
               <a href="/" class="Logo-imageLink"><img class="Logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-jacobs.svg" alt="Jacobs Sierbestrating Logo"></a>
               <a href="/" class="Logo-textLink"><h1 class="Logo-heading"><span class="Logo-headingTop">Jacobs</span><span class="Logo-headingBottom">Sierbestrating</span></h1></a>
           </div>
-          <div class="u-objRight">
-            <table class="Table Table--invertedBold">
-                <thead>
-                <tr>
-                    <td class="Table-heading">Openingstijden</td>
-                </tr>                    
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Ma t/m vr</td>
-                    <td>9:00 t/m 18:00</td>
-                </tr>
-                <tr>
-                    <td>Zaterdag</td>
-                    <td>8:00 t/m 16:00</td>
-                </tr>
-                <tr>
-                    <td>Zondag</td>
-                    <td>Gesloten</td>
-                </tr>
-                </tbody>
-            </table>
+		  <div class="u-objRight">
+          	<?php get_sidebar('openingstijden'); ?>
           </div>
         </div>
     </div>
